@@ -14,7 +14,7 @@ So first, let’s see how we attach a script to a webpage. For server-side envir
 JavaScript programs can be inserted almost anywhere into an HTML document using the <script> tag.
 
 For instance:
-
+```
 <!DOCTYPE HTML>
 <html>
 
@@ -31,6 +31,8 @@ For instance:
 </body>
 
 </html>
+
+```
 You can run the example by clicking the “Play” button in the right-top corner of the box above.
 
 The <script> tag contains JavaScript code which is automatically executed when the browser processes the tag.
@@ -49,10 +51,11 @@ This attribute was meant to show the language of the script. This attribute no l
 
 Comments before and after scripts.
 In really ancient books and guides, you may find comments inside <script> tags, like this:
-
-<script type="text/javascript"><!--
+```
+<script type="text/javascript">
     ...
 </script>
+```
 This trick isn’t used in modern JavaScript. These comments hide JavaScript code from old browsers that didn’t know how to process the <script> tag. Since browsers released in the last 15 years don’t have this issue, this kind of comment can help you identify really old code.
 
 ----------------------------------------------------------------
@@ -61,17 +64,21 @@ This trick isn’t used in modern JavaScript. These comments hide JavaScript cod
 If we have a lot of JavaScript code, we can put it into a separate file.
 
 Script files are attached to HTML with the src attribute:
-
+```
 <script src="/path/to/script.js"></script>
+```
 Here, /path/to/script.js is an absolute path to the script from the site root. One can also provide a relative path from the current page. For instance, src="script.js", just like src="./script.js", would mean a file "script.js" in the current folder.
 
 We can give a full URL as well. For instance:
+```
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
 To attach several scripts, use multiple tags:
 
 <script src="/js/script1.js"></script>
 <script src="/js/script2.js"></script>
+```
+
 …
 Please note:
 As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files.
@@ -87,18 +94,22 @@ A single <script> tag can’t have both the src attribute and code inside.
 
 This won’t work:
 
+```
 <script src="file.js">
   alert(1); // the content is ignored, because src is set
 </script>
+```
+
 We must choose either an external <script src="…"> or a regular <script> with code.
 
 The example above can be split into two scripts to work:
 
+```
 <script src="file.js"></script>
 <script>
   alert(1);
 </script>
-
+```
  ----------------------------------------------------------------
 
  # Summary
