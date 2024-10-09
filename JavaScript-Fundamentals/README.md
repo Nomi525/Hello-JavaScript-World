@@ -1,16 +1,16 @@
-<!-- JavaScript Fundamentals -->
+// JavaScript Fundamentals
 
- <!-- Hello, world!
+ # Hello, world!
 This part of the tutorial is about core JavaScript, the language itself.
 
 But we need a working environment to run our scripts and, since this book is online, the browser is a good choice. We’ll keep the amount of browser-specific commands (like alert) to a minimum so that you don’t spend time on them if you plan to concentrate on another environment (like Node.js). We’ll focus on JavaScript in the browser in the next part of the tutorial.
 
-So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like "node my.js". -->
+So first, let’s see how we attach a script to a webpage. For server-side environments (like Node.js), you can execute the script with a command like "node my.js".
 
 
-<!-- ---------------------------------------------------------------- -->
+----------------------------------------------------------------
 
-<!-- The “script” tag
+ # The “script” tag
 JavaScript programs can be inserted almost anywhere into an HTML document using the <script> tag.
 
 For instance:
@@ -33,13 +33,12 @@ For instance:
 </html>
 You can run the example by clicking the “Play” button in the right-top corner of the box above.
 
-The <script> tag contains JavaScript code which is automatically executed when the browser processes the tag. -->
+The <script> tag contains JavaScript code which is automatically executed when the browser processes the tag.
 
 
+----------------------------------------------------------------
 
- <!-- ---------------------------------------------------------------- -->
-
-<!-- Modern markup
+ # Modern markup
 The <script> tag has a few attributes that are rarely used nowadays but can still be found in old code:
 
 The type attribute: <script type=…>
@@ -55,13 +54,10 @@ In really ancient books and guides, you may find comments inside <script> tags, 
     ...
 </script>
 This trick isn’t used in modern JavaScript. These comments hide JavaScript code from old browsers that didn’t know how to process the <script> tag. Since browsers released in the last 15 years don’t have this issue, this kind of comment can help you identify really old code.
- -->
 
+----------------------------------------------------------------
 
-
-<!-- ---------------------------------------------------------------- -->
-
- <!-- External scripts
+ # External scripts
 If we have a lot of JavaScript code, we can put it into a separate file.
 
 Script files are attached to HTML with the src attribute:
@@ -101,13 +97,11 @@ The example above can be split into two scripts to work:
 <script src="file.js"></script>
 <script>
   alert(1);
-</script> -->
+</script>
 
+ ----------------------------------------------------------------
 
-
-<!-- ---------------------------------------------------------------- -->
-
- <!-- Summary
+ # Summary
 We can use a <script> tag to add JavaScript code to a page.
 
 The type and language attributes are not required.
@@ -116,27 +110,22 @@ A script in an external file can be inserted with <script src="path/to/script.js
 
 There is much more to learn about browser scripts and their interaction with the webpage. But let’s keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn’t distract ourselves with browser-specific implementations of it. 
 We’ll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
- -->
 
+----------------------------------------------------------------
 
-
-<!-- ---------------------------------------------------------------- -->
-
- <!-- Tasks
+ # Tasks
 Show an alert
 Create a page that shows a message “I’m JavaScript!”.
 
-Do it in a sandbox, or on your hard drive, doesn’t matter, just ensure that it works.  -->
+Do it in a sandbox, or on your hard drive, doesn’t matter, just ensure that it works. 
 
 
+ ----------------------------------------------------------------
 
- <!-- ---------------------------------------------------------------- -->
-
- <!-- Show an alert with an external script
+  # Show an alert with an external script
 Take the solution of the previous task Show an alert. 
 Modify it by extracting the script content into an external file alert.js, residing in the same folder.
 
-Open the page, ensure that the alert works 
+Open the page, ensure that the alert works
 
- -->
-
+----------------------------------------------------------------
